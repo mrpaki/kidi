@@ -372,6 +372,21 @@
       drop-shadow(0 0 36px rgba(124,43,255,.6));
     animation:pulseP 5s ease-in-out infinite;
   }
+  .logo-grupa{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(14px,3vw,28px);
+    flex-wrap:wrap;
+    margin-bottom:clamp(10px,2vw,18px);
+  }
+  .logo-grupa .stripe-logo,
+  .logo-grupa .stripe-logo--shape{
+    margin-bottom:0;
+  }
+  .logo-grupa .stripe-logo--shape img{
+    width:clamp(70px,14vw,110px);
+  }
 
   .stripe.red{background:#0f0b1a}
   .stripe.red:hover{background:#150e22}
@@ -551,7 +566,11 @@
 
         <!-- TODO: zameni href linkom ka Fiat sajtu -->
         <a class="stripe red" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
-          <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
+          <span class="logo-grupa">
+            <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
+            <span class="stripe-logo stripe-logo--shape"><img src="img/lada-logo.png" alt="Lada logo"></span>
+            <span class="stripe-logo stripe-logo--shape"><img src="img/zastava-logo.png" alt="Zastava logo"></span>
+          </span>
           <span class="brand">FIAT</span>
           <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
           <span class="go">Pogledaj delove →</span>
