@@ -355,6 +355,23 @@
     border-radius:50%;
     object-fit:contain;
   }
+  .stripe-logo--shape{
+    border-radius:0;
+    box-shadow:none;
+    background:none;
+  }
+  .stripe-logo--shape img{
+    width:clamp(100px,20vw,160px);
+    height:auto;
+    border-radius:0;
+    object-fit:contain;
+    filter:
+      drop-shadow(0 0 3px #d9b8ff)
+      drop-shadow(0 0 8px #b98bff)
+      drop-shadow(0 0 18px #7c2bff)
+      drop-shadow(0 0 36px rgba(124,43,255,.6));
+    animation:pulseP 5s ease-in-out infinite;
+  }
 
   .stripe.red{background:#0f0b1a}
   .stripe.red:hover{background:#150e22}
@@ -542,7 +559,7 @@
 
         <!-- TODO: zameni href linkom ka Lada sajtu -->
         <a class="stripe blue" href="#" target="_blank" rel="noopener">
-          <span class="stripe-logo"><img src="img/lada-logo.png" alt="Lada logo" width="96" height="96"></span>
+          <span class="stripe-logo stripe-logo--shape"><img src="img/lada-logo.png" alt="Lada logo"></span>
           <span class="brand">LADA</span>
           <span class="desc">Niva, Riva, Samara, 2101–2107 — jednostavne kao pesma, izdržljive kao svekrva.</span>
           <span class="go">Pogledaj delove →</span>
@@ -550,7 +567,7 @@
 
         <!-- TODO: zameni href linkom ka Zastava sajtu -->
         <a class="stripe white" href="#" target="_blank" rel="noopener">
-          <span class="stripe-logo"><img src="img/zastava-logo.png" alt="Zastava logo" width="96" height="96"></span>
+          <span class="stripe-logo stripe-logo--shape"><img src="img/zastava-logo.png" alt="Zastava logo"></span>
           <span class="brand">ZASTAVA</span>
           <span class="desc">101, 128, Yugo, Skala, Florida — domaći ponos od branika do auspuha.</span>
           <span class="go">Pogledaj delove →</span>
