@@ -345,7 +345,9 @@
   .stripe-tekst{display:flex;flex-direction:column;gap:0;flex:1;min-width:0}
   .stripe-row .stripe-logo,
   .stripe-row .stripe-logo--shape{margin-bottom:0;flex-shrink:0}
-  .stripe.red .stripe-tekst{text-align:center}
+  .stripe.red{position:relative}
+  .stripe.red .brand{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);white-space:nowrap}
+  .stripe.red .stripe-tekst{visibility:hidden;width:0;overflow:hidden;padding:0;margin:0}
   .stripe-logo{
     display:inline-block;
     margin-bottom:clamp(10px,2vw,18px);
@@ -566,8 +568,8 @@
         <!-- TODO: zameni href linkom ka Fiat sajtu -->
         <a class="stripe red stripe-row" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
           <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
+          <span class="brand">FIAT</span>
           <span class="stripe-tekst">
-            <span class="brand">FIAT</span>
             <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
             <span class="go">Pogledaj delove →</span>
           </span>
