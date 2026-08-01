@@ -356,23 +356,25 @@
     object-fit:contain;
   }
   .stripe-logo--shape{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:clamp(180px,34vw,230px);
+    height:clamp(102px,19vw,130px);
+    border-radius:50%;
     margin-bottom:clamp(10px,2vw,18px);
+    box-shadow:
+      0 0 0 3px #b98bff,
+      0 0 12px 4px #7c2bff,
+      0 0 28px 8px rgba(124,43,255,.55),
+      0 0 56px 12px rgba(124,43,255,.25);
+    animation:pulseP 5s ease-in-out infinite;
   }
   .stripe-logo--shape img{
     display:block;
-    width:clamp(140px,28vw,190px);
+    width:80%;
     height:auto;
-    border-radius:0;
     object-fit:contain;
-    filter:
-      drop-shadow(0 0 2px #f4ecff)
-      drop-shadow(0 0 6px #d9b8ff)
-      drop-shadow(0 0 14px #b98bff)
-      drop-shadow(0 0 24px #7c2bff)
-      drop-shadow(0 0 44px rgba(124,43,255,.85))
-      drop-shadow(0 0 70px rgba(124,43,255,.45));
-    animation:pulseP 5s ease-in-out infinite;
   }
 
   .stripe.red{background:#0f0b1a}
