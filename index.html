@@ -337,6 +337,14 @@
   }
   .stripe:hover .go,.stripe:focus-visible .go{opacity:1;transform:translateX(4px)}
   .stripe:focus-visible{outline:2px solid var(--purple);outline-offset:-4px}
+  .stripe-row{
+    display:flex;flex-direction:row;align-items:center;
+    gap:clamp(18px,4vw,40px);text-align:left;
+  }
+  .stripe-row--rev{flex-direction:row-reverse;text-align:right}
+  .stripe-tekst{display:flex;flex-direction:column;gap:0;flex:1;min-width:0}
+  .stripe-row .stripe-logo,
+  .stripe-row .stripe-logo--shape{margin-bottom:0;flex-shrink:0}
   .stripe-logo{
     display:inline-block;
     margin-bottom:clamp(10px,2vw,18px);
@@ -554,19 +562,23 @@
       <div class="flag">
 
         <!-- TODO: zameni href linkom ka Fiat sajtu -->
-        <a class="stripe red" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
+        <a class="stripe red stripe-row" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
           <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
-          <span class="brand">FIAT</span>
-          <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
-          <span class="go">Pogledaj delove →</span>
+          <span class="stripe-tekst">
+            <span class="brand">FIAT</span>
+            <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
+            <span class="go">Pogledaj delove →</span>
+          </span>
         </a>
 
         <!-- TODO: zameni href linkom ka Lada sajtu -->
-        <a class="stripe blue" href="#" target="_blank" rel="noopener">
+        <a class="stripe blue stripe-row stripe-row--rev" href="#" target="_blank" rel="noopener">
           <span class="stripe-logo--shape"><img src="img/lada-logo.png" alt="Lada logo"></span>
-          <span class="brand">LADA</span>
-          <span class="desc">Niva, Riva, Samara, 2101–2107 — jednostavne kao pesma, izdržljive kao svekrva.</span>
-          <span class="go">Pogledaj delove →</span>
+          <span class="stripe-tekst">
+            <span class="brand">LADA</span>
+            <span class="desc">Niva, Riva, Samara, 2101–2107 — jednostavne kao pesma, izdržljive kao svekrva.</span>
+            <span class="go">Pogledaj delove →</span>
+          </span>
         </a>
 
         <!-- TODO: zameni href linkom ka Zastava sajtu -->
