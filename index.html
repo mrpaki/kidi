@@ -345,9 +345,10 @@
   .stripe-tekst{display:flex;flex-direction:column;gap:0;flex:1;min-width:0}
   .stripe-row .stripe-logo,
   .stripe-row .stripe-logo--shape{margin-bottom:0;flex-shrink:0}
-  .stripe.red{position:relative}
-  .stripe.red .brand{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);white-space:nowrap}
-  .stripe.red .stripe-tekst{visibility:hidden;width:0;overflow:hidden;padding:0;margin:0}
+  .stripe-fiat{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .stripe-fiat-row{display:flex;align-items:center;width:100%;margin-bottom:clamp(6px,1.5vw,14px)}
+  .stripe-fiat-row .brand{flex:1;text-align:center}
+  .stripe-fiat-spacer{width:clamp(80px,16vw,120px);flex-shrink:0}
   .stripe-logo{
     display:inline-block;
     margin-bottom:clamp(10px,2vw,18px);
@@ -566,13 +567,14 @@
       <div class="flag">
 
         <!-- TODO: zameni href linkom ka Fiat sajtu -->
-        <a class="stripe red stripe-row" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
-          <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
-          <span class="brand">FIAT</span>
-          <span class="stripe-tekst">
-            <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
-            <span class="go">Pogledaj delove →</span>
+        <a class="stripe red stripe-fiat" href="https://demo-autootpadfiat.autootpadkidi.rs/" target="_blank" rel="noopener">
+          <span class="stripe-fiat-row">
+            <span class="stripe-logo"><img src="img/fiat-logo.png" alt="Fiat logo" width="96" height="96"></span>
+            <span class="brand">FIAT</span>
+            <span class="stripe-fiat-spacer" aria-hidden="true"></span>
           </span>
+          <span class="desc">500 &middot; 600 &middot; 750/850 (naš voljeni Fića) &middot; Uno &middot; Punto &middot; Panda &middot; Bravo &middot; Stilo &middot; Tipo &middot; Seicento</span>
+          <span class="go">Pogledaj delove →</span>
         </a>
 
         <!-- TODO: zameni href linkom ka Lada sajtu -->
