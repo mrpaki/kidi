@@ -350,26 +350,28 @@
   }
   .stripe-logo img{
     display:block;
-    width:clamp(60px,12vw,96px);
-    height:clamp(60px,12vw,96px);
+    width:clamp(80px,16vw,120px);
+    height:clamp(80px,16vw,120px);
     border-radius:50%;
     object-fit:contain;
   }
   .stripe-logo--shape{
-    border-radius:0;
-    box-shadow:none;
-    background:none;
+    display:inline-block;
+    margin-bottom:clamp(10px,2vw,18px);
   }
   .stripe-logo--shape img{
-    width:clamp(80px,18vw,115px);
+    display:block;
+    width:clamp(140px,28vw,190px);
     height:auto;
     border-radius:0;
     object-fit:contain;
     filter:
-      drop-shadow(0 0 3px #d9b8ff)
-      drop-shadow(0 0 8px #b98bff)
-      drop-shadow(0 0 18px #7c2bff)
-      drop-shadow(0 0 36px rgba(124,43,255,.6));
+      drop-shadow(0 0 2px #f4ecff)
+      drop-shadow(0 0 6px #d9b8ff)
+      drop-shadow(0 0 14px #b98bff)
+      drop-shadow(0 0 24px #7c2bff)
+      drop-shadow(0 0 44px rgba(124,43,255,.85))
+      drop-shadow(0 0 70px rgba(124,43,255,.45));
     animation:pulseP 5s ease-in-out infinite;
   }
 
