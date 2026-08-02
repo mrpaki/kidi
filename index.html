@@ -640,21 +640,48 @@
                   <feGaussianBlur stdDeviation="3"/>
                 </filter>
                 <g id="tiresScene" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M30,112 L176,112"/>
-                  <!-- stack of 4 tires -->
-                  <path d="M36,40 L36,108"/>
-                  <path d="M96,40 L96,108"/>
-                  <ellipse cx="66" cy="40" rx="30" ry="8"/>
-                  <ellipse cx="66" cy="57" rx="30" ry="8"/>
-                  <ellipse cx="66" cy="74" rx="30" ry="8"/>
-                  <ellipse cx="66" cy="91" rx="30" ry="8"/>
-                  <ellipse cx="66" cy="108" rx="30" ry="8"/>
-                  <ellipse cx="66" cy="40" rx="13" ry="3.4"/>
-                  <!-- 5th tire leaning on the stack -->
-                  <g transform="rotate(-16 122 84)">
-                    <ellipse cx="122" cy="84" rx="25" ry="26"/>
-                    <ellipse cx="122" cy="84" rx="10.5" ry="11"/>
-                  </g>
+                  <!-- ground shadow -->
+                  <path d="M28,118 Q107,124 186,118"/>
+
+                  <!-- BACK-LEFT tire cx=78 cy=46 R=26 -->
+                  <circle cx="78" cy="46" r="26"/>
+                  <circle cx="78" cy="46" r="16"/>
+                  <circle cx="78" cy="46" r="5"/>
+                  <line x1="78"   y1="41"   x2="78"   y2="30"/>
+                  <line x1="82.8" y1="44.5" x2="93.2" y2="41.1"/>
+                  <line x1="80.9" y1="50"   x2="87.4" y2="58.9"/>
+                  <line x1="75.1" y1="50"   x2="68.6" y2="58.9"/>
+                  <line x1="73.2" y1="44.5" x2="62.8" y2="41.1"/>
+
+                  <!-- BACK-RIGHT tire cx=132 cy=43 R=24 -->
+                  <circle cx="132" cy="43" r="24"/>
+                  <circle cx="132" cy="43" r="15"/>
+                  <circle cx="132" cy="43" r="5"/>
+                  <line x1="132"  y1="38"   x2="132"  y2="28"/>
+                  <line x1="136.8" y1="41.5" x2="146.3" y2="38.4"/>
+                  <line x1="134.9" y1="47"   x2="140.8" y2="55.1"/>
+                  <line x1="129.1" y1="47"   x2="123.2" y2="55.1"/>
+                  <line x1="127.2" y1="41.5" x2="117.7" y2="38.4"/>
+
+                  <!-- FRONT-LEFT tire cx=65 cy=83 R=33 -->
+                  <circle cx="65" cy="83" r="33"/>
+                  <circle cx="65" cy="83" r="20"/>
+                  <circle cx="65" cy="83" r="6"/>
+                  <line x1="65"   y1="77"   x2="65"   y2="63"/>
+                  <line x1="70.7" y1="81.1" x2="84"   y2="76.8"/>
+                  <line x1="68.5" y1="87.9" x2="76.8" y2="99.2"/>
+                  <line x1="61.5" y1="87.9" x2="53.2" y2="99.2"/>
+                  <line x1="59.3" y1="81.1" x2="46"   y2="76.8"/>
+
+                  <!-- FRONT-RIGHT tire cx=145 cy=83 R=33 -->
+                  <circle cx="145" cy="83" r="33"/>
+                  <circle cx="145" cy="83" r="20"/>
+                  <circle cx="145" cy="83" r="6"/>
+                  <line x1="145"  y1="77"   x2="145"  y2="63"/>
+                  <line x1="150.7" y1="81.1" x2="164"  y2="76.8"/>
+                  <line x1="148.5" y1="87.9" x2="156.8" y2="99.2"/>
+                  <line x1="141.5" y1="87.9" x2="133.2" y2="99.2"/>
+                  <line x1="139.3" y1="81.1" x2="126"  y2="76.8"/>
                 </g>
               </defs>
               <use href="#tiresScene" stroke="#7c2bff" stroke-width="6" filter="url(#glowTires)" opacity=".8"/>
