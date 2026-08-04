@@ -600,25 +600,37 @@
         <!-- TODO: zameni href linkom ka sajtu za otkup -->
         <a class="svc" href="#" target="_blank" rel="noopener">
           <div class="svc-art">
-            <svg class="neon-art" viewBox="0 0 226 120" aria-hidden="true">
+            <svg class="neon-art" viewBox="0 0 295 100" aria-hidden="true">
               <defs>
                 <filter id="glowCars" x="-40%" y="-40%" width="180%" height="180%">
                   <feGaussianBlur stdDeviation="3"/>
                 </filter>
                 <g id="car" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12,42 L12,32 C12,29 15,30 20,30 L34,30 L46,18 L74,18 L86,30 L100,30 C105,30 110,33 110,42 Z"/>
-                  <path d="M47,21 L73,21 L74,29 L46,29 Z"/>
-                  <path d="M60,21 L60,29"/>
-                  <circle cx="32" cy="45" r="8"/>
-                  <circle cx="88" cy="45" r="8"/>
-                  <circle cx="32" cy="45" r="2.4"/>
-                  <circle cx="88" cy="45" r="2.4"/>
-                  <circle cx="14" cy="34" r="1.8"/>
+                  <!-- outer body with wheel arches -->
+                  <path d="M8,58 L8,46 C8,42 4,38 4,32 C4,26 10,24 16,24 L16,18 C16,10 22,4 30,2 L38,1 C42,0 46,0 50,0 C54,0 58,0 62,1 L70,2 C78,4 84,10 84,18 L84,24 C90,24 96,26 96,32 C96,38 92,42 92,46 L92,58 Z"/>
+                  <!-- windshield -->
+                  <path d="M22,22 L26,4 L74,4 L78,22 Z"/>
+                  <!-- hood line -->
+                  <line x1="16" y1="24" x2="84" y2="24"/>
+                  <!-- left headlight outer + inner -->
+                  <ellipse cx="10" cy="36" rx="7" ry="5"/>
+                  <ellipse cx="10" cy="36" rx="3" ry="2"/>
+                  <!-- right headlight outer + inner -->
+                  <ellipse cx="90" cy="36" rx="7" ry="5"/>
+                  <ellipse cx="90" cy="36" rx="3" ry="2"/>
+                  <!-- bumper arc -->
+                  <path d="M10,52 Q50,57 90,52"/>
+                  <!-- grille -->
+                  <rect x="36" y="46" width="28" height="8" rx="2"/>
+                  <!-- left mirror -->
+                  <path d="M16,20 L8,16 L8,22 L16,22"/>
+                  <!-- right mirror -->
+                  <path d="M84,20 L92,16 L92,22 L84,22"/>
                 </g>
                 <g id="carsScene">
-                  <path d="M14,106 L214,106" fill="none" stroke-linecap="round"/>
-                  <use href="#car" transform="translate(6,52)"/>
-                  <use href="#car" transform="translate(122,61.5) scale(0.82)"/>
+                  <use href="#car" transform="translate(10,40) scale(0.82)"/>
+                  <use href="#car" transform="translate(98,33) scale(0.96)"/>
+                  <use href="#car" transform="translate(202,40) scale(0.82)"/>
                 </g>
               </defs>
               <use href="#carsScene" stroke="#7c2bff" stroke-width="6" filter="url(#glowCars)" opacity=".8"/>
