@@ -261,8 +261,17 @@
     background:radial-gradient(ellipse 100% 58% at 100% 50%,
       rgba(255,246,200,.30),rgba(255,246,200,0) 70%);
   }
-  .hl-a{--hx:15.3%;--hy:52.7%}
-  .hl-b{--hx:39.4%;--hy:61.4%}
+  .hl-a{--hx:21.5%;--hy:73.2%}
+  .hl-b{--hx:44.2%;--hy:72.2%}
+  .hl-c{--hx:83.5%;--hy:36.9%}
+  .hl-c.headlight{
+    width:7cqw;height:7cqw;
+    background:radial-gradient(circle at 50% 50%,
+      rgba(255,60,0,.99) 0%,
+      rgba(255,80,0,.75) 18%,
+      rgba(255,60,0,.35) 40%,
+      rgba(255,60,0,0) 68%);
+  }
   .hero-frame.lights-on .headlight{opacity:1}
   .hero-frame.lights-on .beam{opacity:1}
   .hero-frame.lights-on img{filter:drop-shadow(0 26px 34px rgba(0,0,0,.6)) brightness(1.1) saturate(1.05)}
@@ -533,6 +542,7 @@
       <span class="beam hl-b" aria-hidden="true"></span>
       <span class="headlight hl-a" aria-hidden="true"></span>
       <span class="headlight hl-b" aria-hidden="true"></span>
+      <span class="headlight hl-c" aria-hidden="true"></span>
     </div>
     <span class="honk-hint">Klikni na Fiću — upali farove i zatrubi 🔊</span>
   </div>
