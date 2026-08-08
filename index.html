@@ -307,18 +307,31 @@
   .flag{
     display:flex;flex-direction:column;
     max-width:640px;margin:0 auto;
-    border-radius:14px;overflow:hidden;
-    border:1px solid rgba(198,205,218,.1);
-    box-shadow:0 26px 70px rgba(0,0,0,.5);
+    gap:14px;
   }
   .stripe{
     position:relative;
     display:block;
     text-align:center;
     padding:clamp(22px,4.5vw,40px) 20px;
-    transition:background .3s ease, transform .3s ease;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid rgba(185,139,255,.22);
+    box-shadow:
+      0 0 0 1px rgba(124,43,255,.18),
+      0 0 18px 4px rgba(124,43,255,.18),
+      0 0 44px 8px rgba(124,43,255,.08),
+      0 22px 50px rgba(0,0,0,.5);
+    transition:box-shadow .3s ease, border-color .3s ease, transform .3s ease;
   }
-  .stripe + .stripe{border-top:1px solid rgba(255,255,255,.05)}
+  .stripe:hover{
+    border-color:rgba(185,139,255,.5);
+    box-shadow:
+      0 0 0 1px rgba(185,139,255,.45),
+      0 0 28px 6px rgba(124,43,255,.38),
+      0 0 64px 12px rgba(124,43,255,.18),
+      0 26px 60px rgba(0,0,0,.55);
+  }
   .stripe .brand{
     font-family:'Comfortaa',cursive;
     font-weight:700;
